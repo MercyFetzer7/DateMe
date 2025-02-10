@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace DateMe.Models;
 
 public class Application
 {
+    [Key]
+    [Required]
     // public int ApplicationID { get;} // read only variable
     public int ApplicationID { get; set;}
     public string FirstName { get; set; }
